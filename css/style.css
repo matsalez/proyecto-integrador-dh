@@ -1,0 +1,97 @@
+@import "normalize.css";
+@import "bootstrap-grid.min.css";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* General */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+width: 100%;
+margin-top: 10%;
+}
+/* Header  */
+
+.main-nav {
+  width: 100%;
+  background-color: rgba(236, 236, 236,0.7);
+  display: inline-flex;
+  text-transform: uppercase;
+	position: fixed;
+
+}
+.main-nav ul {
+  padding-left: 30px;
+	display: inline-flex;
+}
+.main-nav a {
+	width: 100%;
+  display: block;
+  padding: 2em;
+  color: #191C26;
+}
+.main-nav a:hover {
+  background-color: rgba(231, 231, 231, 0.6);
+}
+.main-nav ul li ul {
+  display: none;
+}
+.main-nav ul li a:hover + ul, .main-nav ul li ul:hover {
+  display: inline-block;
+  background-color: rgba(245, 245, 245, 0.7);
+
+}
+/* Fin Header  */
+
+/* Inicio Container  */
+.container {
+	margin-top: 20px;
+}
+
+
+
+/* footer */
+
+.main-footer {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  display: inline-flex;
+  text-transform: uppercase;
+}
+
+.main-footer ul {
+  display: inline-flex;
+}
+
+.main-footer a {
+  display: inline-flex;
+  padding: 1em;
+  color: #191C26;
+	text-align: center;
+}
+.main-footer ul li a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+  display: inline-flex;
+
+}
+
+
+}
