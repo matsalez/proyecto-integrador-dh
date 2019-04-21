@@ -11,9 +11,8 @@
   <body>
     <!-- INICIO header -->
     <header class="main-header">
-      <input type="checkbox" id="btn-menu">
-      <label for="btn-menu" class="fas fa-bars"> </label>
-      </div>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="fas fa-bars boton-menu"> </label>
       <nav class="menu">
     		<ul >
     			<li><a href="#newarrivals">New arrivals</a></li>
@@ -30,11 +29,19 @@
     				</ul>
     			</li>
     			<li><a href="#accesorios">Accesorios</a></li>
-    			<li><a href="#sprin-summer">Spring/Summer</a>
-          <li><a href="#lookbook">Lookbook</a>
-          <li><a href="#contacto">Contacto</a>
-    			</li>
+    			<li><a href="#sprin-summer">Spring/Summer</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="redes-nav-home"><a href='http://www.twitter.com/brakeup'><i class="fab fa-twitter"></i></a> </li>
+          <li class="redes-nav-home"><a href='http://www.facebook.com/brakeup'><i class="fab fa-facebook"></i></a></li>
+          <li class="redes-nav-home"><a href='http://www.instagram.com/brakeup'><i class="fab fa-instagram"></i></a></li>
     		</ul>
+        <div class="redes-nav">
+          <li><a href='http://www.twitter.com/brakeup'><i class="fab fa-twitter"></i></a> </li>
+          <li><a href='http://www.facebook.com/brakeup'><i class="fab fa-facebook"></i></a></li>
+          <li><a href='http://www.instagram.com/brakeup'><i class="fab fa-instagram"></i></a></li>
+        </div>
+
 
     	</nav>
       <!-- INICIO Script utilizado para el desplegue del menu, primero se ejecuta el código HTML arriba y luego este script -->

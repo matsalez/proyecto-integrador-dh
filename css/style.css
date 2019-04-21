@@ -38,14 +38,22 @@ margin-top: 10%;
 	justify-content: center;
 }
 
-#btn-menu {display: none;
+
+
+#btn-menu {
+	display: none;
 }
 
-header label {
+.main-header label {
 	display: none;
 	font-size:25px;
 	cursor: pointer;
 }
+
+.main-header .redes-nav li a {
+	display: none;
+}
+
 
 .menu ul {
 	background-color: rgba(236, 236, 236,0.7);
@@ -59,7 +67,8 @@ header label {
 
 .menu a {
 	display: block;
-	padding: 15px 20px;
+	height: 50px;
+	padding: 10px 25px;
 	color: rgb(0, 0, 0);
 
 }
@@ -78,9 +87,10 @@ header label {
 	position: absolute; /*para que no se vaya del padre contenedor (su columna)*/
 }
 
+
 @media (max-width:768px) {
 
-	label {
+	.main-header label {
 		margin-top: 15px;
 		display: block;
 	}
@@ -106,7 +116,15 @@ header label {
 	} /*Cuando haga clic en el botón "menu" se translade sobre su eje Y*/
 
 	.menu ul ul {
-		background-color: rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0.3);
 	}
 
+	.menu .redes-nav li a {
+		display: block;
+		float: left;
+	/*porque le había dado display:flex al ul */
+	}
+	.redes-nav-home {
+	display: none;
+	}
 	}
