@@ -17,7 +17,8 @@ a {
 	text-decoration: none;
 }
 
-ul, ol {
+
+ul, li {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -27,71 +28,85 @@ img {
 width: 100%;
 margin-top: 10%;
 }
-/* Header  */
-
-.main-nav {
-  width: 100%;
-  background-color: rgba(236, 236, 236,0.7);
-  display: inline-flex;
-  text-transform: uppercase;
-	position: fixed;
-
-}
-.main-nav ul {
-  padding-left: 30px;
-	display: inline-flex;
-}
-.main-nav a {
-	width: 100%;
-  display: block;
-  padding: 2em;
-  color: #191C26;
-}
-.main-nav a:hover {
-  background-color: rgba(231, 231, 231, 0.6);
-}
-.main-nav ul li ul {
-  display: none;
-}
-.main-nav ul li a:hover + ul, .main-nav ul li ul:hover {
-  display: inline-block;
-  background-color: rgba(245, 245, 245, 0.7);
-
-}
-/* Fin Header  */
-
-/* Inicio Container  */
-.container {
-	margin-top: 20px;
-}
 
 
-
-/* footer */
-
-.main-footer {
-  width: 100%;
-  background-color: rgb(236, 236, 236);
-  display: inline-flex;
-  text-transform: uppercase;
+.main-header {
+	height: 50px;
+	background-color: rgba(236, 236, 236,0.7);
+	color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
 }
 
-.main-footer ul {
-  display: inline-flex;
+#btn-menu {display: none;
 }
 
-.main-footer a {
-  display: inline-flex;
-  padding: 1em;
-  color: #191C26;
-	text-align: center;
+header label {
+	display: none;
+	font-size:25px;
+	cursor: pointer;
 }
-.main-footer ul li a {
-  text-decoration: none;
-  color: rgb(0,0,0);
-  display: inline-flex;
+
+.menu ul {
+	background-color: rgba(236, 236, 236,0.7);
+	display: flex;
 
 }
 
+.menu ul ul{
+	display: none;
+}
+
+.menu a {
+	display: block;
+	padding: 15px 20px;
+	color: rgb(0, 0, 0);
 
 }
+
+.menu a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.menu a span {
+	margin-left: 10px;
+}
+
+.menu ul li:hover ul{
+	display: block;
+	position: absolute; /*para que no se vaya del padre contenedor (su columna)*/
+}
+
+@media (max-width:768px) {
+
+	label {
+		margin-top: 15px;
+		display: block;
+	}
+
+	.menu {
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		transform: translateX(-100%);
+		}
+
+	.menu ul {
+		flex-direction: column; /*porque le había dado display:flex al ul */
+	}
+
+	.menu ul li:hover ul{
+		display: none; /*porque en mobile las listas no se desplegan hay que tocarlas*/
+		position: static;
+	}
+
+	#btn-menu:checked ~ .menu {
+	transform: translateY(0%);
+	} /*Cuando haga clic en el botón "menu" se translade sobre su eje Y*/
+
+	.menu ul ul {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+
+	}

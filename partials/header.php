@@ -4,17 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!-- CDN Jquery-->
     <title>Isabella</title>
   </head>
   <body>
-    <!-- inicio header -->
+    <!-- INICIO header -->
     <header class="main-header">
-      <nav class="main-nav">
-    		<ul class="sections-home">
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu" class="fas fa-bars"> </label>
+      </div>
+      <nav class="menu">
+    		<ul >
     			<li><a href="#newarrivals">New arrivals</a></li>
-    			<li><a href="#coleccion">Colección</a>
-    				<ul>
+    			<li class="submenu"><a href="#coleccion">Colección <span><i class="fas fa-angle-down"></i></span></a>
+    				 <ul>
     					<li><a href="#pantalones">Pantalones</a></li>
     					<li><a href="#remeras">Remeras</a></li>
     					<li><a href="#faldas">Faldas - Shorts</a></li>
@@ -31,16 +35,33 @@
           <li><a href="#contacto">Contacto</a>
     			</li>
     		</ul>
+
     	</nav>
+      <!-- INICIO Script utilizado para el desplegue del menu, primero se ejecuta el código HTML arriba y luego este script -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.submenu').click(function(){
+            $(this).children('ul').slideToggle();
+      })
+      })
+            $(document).ready(function(){
+              $('ul').click(function(i){
+                i.stopPropagation();
+
+        })
+        })
+      </script>
+
+      <!-- FIN Jquery Script utilizado para el desplegue del menu -->
 
     </header>
-    <!-- Fin header -->
+    <!-- FIN header -->
 
-    <!-- Relleno body -->
+    <!-- INICIO Relleno body -->
     <div class="container">
     <div class="banner row ">
       <a href="#coleccion"></a>
-      <img class="banner-coleccion"src="../images/banner-coleccion.jpg" alt="banner-coleccion">
+    <!--  <img class="banner-coleccion"src="../images/banner-coleccion.jpg" alt="banner-coleccion"> -->
     </div>
     </div>
     <br>
