@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.preguntas{
+   width: 100%;
+   background-color: rgba(236, 236, 236,0.7);
+   display: inline-flex;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.respuestas{
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.7);
+  display: inline-flex;
+  text-transform: uppercase;
+  position: relative;
+  
+}
