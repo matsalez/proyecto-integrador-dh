@@ -13,10 +13,15 @@
     <header class="main-header">
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" class="fas fa-bars boton-menu"> </label>
-        <ul class="redes">
-          <li><a href='http://www.twitter.com/brakeup'><i class="fab fa-twitter"></i></a> </li>
-          <li><a href='http://www.facebook.com/brakeup'><i class="fab fa-facebook"></i></a></li>
-          <li><a href='http://www.instagram.com/brakeup'><i class="fab fa-instagram"></i></a></li>
+        <a href="#home">
+          <img class="logo-menu" src="../images/logo.png" alt="logo-isabella">
+          </a>
+        <ul class="iconos-menu">
+          <li><input type="search" class"buscador" name="search" value="">
+          <button type="submit" name="button"><i class="fas fa-search"></i> </button></li>
+          <li><a href=#search> <i class="fas fa-search"></i></a></li>
+          <li><a href=#shop> <i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href=#login> <i class="fas fa-sign-in-alt"></i></a></li>
         </ul>
       <nav class="menu">
     		<ul >
@@ -37,14 +42,12 @@
     			<li><a href="#sprin-summer">Spring/Summer</a></li>
           <li><a href="#lookbook">Lookbook</a></li>
           <li><a href="#contacto">Contacto</a></li>
-
+          <div class="redes-nav">
+            <li><a href='http://www.twitter.com/brakeup'><i class="fab fa-twitter"></i></a> </li>
+            <li><a href='http://www.facebook.com/brakeup'><i class="fab fa-facebook"></i></a></li>
+            <li><a href='http://www.instagram.com/brakeup'><i class="fab fa-instagram"></i></a></li>
+          </div>
     		</ul>
-        <div class="redes-nav">
-          <li><a href='http://www.twitter.com/brakeup'><i class="fab fa-twitter"></i></a> </li>
-          <li><a href='http://www.facebook.com/brakeup'><i class="fab fa-facebook"></i></a></li>
-          <li><a href='http://www.instagram.com/brakeup'><i class="fab fa-instagram"></i></a></li>
-        </div>
-
 
     	</nav>
       <!-- INICIO Script utilizado para el desplegue del menu, primero se ejecuta el código HTML arriba y luego este script -->
@@ -74,6 +77,25 @@
     <!--  <img class="banner-coleccion"src="../images/banner-coleccion.jpg" alt="banner-coleccion"> -->
     </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
