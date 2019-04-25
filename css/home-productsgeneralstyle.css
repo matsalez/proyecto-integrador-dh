@@ -20,6 +20,11 @@ img {
    width: 100%;
  }
 
+.home {
+  clear: both;
+}
+
+
  .home-slider {
    display: none;
  }

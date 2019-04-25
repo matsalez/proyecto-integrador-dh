@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr"> -->
+  <!-- <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/navstyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!-- CDN Jquery-->
-    <title>Isabella</title>
-  </head>
-  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!-- CDN Jquery--> -->
+    <!-- <title>Isabella</title>
+  <!-- </head> -->
+  <!-- <body> --> -->
     <!-- INICIO header -->
     <header class="main-header">
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" class="fas fa-bars boton-menu"> </label>
         <a href="#home">
-          <img class="logo-menu" src="../images/logo.png" alt="logo-isabella">
+          <img class="logo-menu" src="images/logo.png" alt="logo-isabella">
           </a>
         <ul class="iconos-menu">
           <aside class="cambios">
@@ -76,12 +76,12 @@
     <!-- FIN header -->
 
     <!-- INICIO Relleno body -->
-    <div class="container">
+    <!-- <div class="container">
     <div class="banner row ">
-      <a href="#coleccion"></a>
+      <a href="#coleccion"></a> -->
     <!--  <img class="banner-coleccion"src="../images/banner-coleccion.jpg" alt="banner-coleccion"> -->
+    <!-- </div>
     </div>
-    </div>
     <br>
     <br>
     <br>
@@ -148,8 +148,8 @@
     <br>
     <br>
     <br>
-    <br>
+    <br> -->
     <!-- Fin relleno -->
 
-  </body>
+  <!-- </body> -->
 </html>
