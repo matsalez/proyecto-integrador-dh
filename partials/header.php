@@ -17,11 +17,16 @@
           <img class="logo-menu" src="../images/logo.png" alt="logo-isabella">
           </a>
         <ul class="iconos-menu">
-          <li><input type="search" class"buscador" name="search" value="">
-          <button type="submit" name="button"><i class="fas fa-search"></i> </button></li>
-          <li><a href=#search> <i class="fas fa-search"></i></a></li>
-          <li><a href=#shop> <i class="fas fa-shopping-cart"></i></a></li>
-          <li><a href=#login> <i class="fas fa-sign-in-alt"></i></a></li>
+          <aside class="cambios">
+          CAMBIOS Y DEVOLUCIONES EN TODOS NUESTROS LOCALES
+          </aside>
+          <li><form class="formulario" method="get" action="procesar.php">
+          		<input type="text" name="termino_busqueda"> </li>
+              <button class="submit-search" type="submit" name="button"> <i class="fas fa-search"></i></button>
+          
+          <li><a href=#shop><span>Tu Carrito</span>  <i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href=#login> <span>Registrate</span><i class="fas fa-user-plus"></i></a></li>
+          <li><a href=#login> <span>ingresá</span><i class="fas fa-user"></i></a></li>
         </ul>
       <nav class="menu">
     		<ul >
