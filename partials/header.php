@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navstyle.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!-- CDN Jquery-->
     <title>Isabella</title>
@@ -23,7 +23,7 @@
           <li><form class="formulario" method="get" action="procesar.php">
           		<input type="text" name="termino_busqueda"> </li>
               <button class="submit-search" type="submit" name="button"> <i class="fas fa-search"></i></button>
-          
+
           <li><a href=#shop><span>Tu Carrito</span>  <i class="fas fa-shopping-cart"></i></a></li>
           <li><a href=#login> <span>Registrate</span><i class="fas fa-user-plus"></i></a></li>
           <li><a href=#login> <span>ingresá</span><i class="fas fa-user"></i></a></li>
