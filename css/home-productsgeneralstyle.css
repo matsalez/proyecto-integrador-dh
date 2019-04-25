@@ -29,9 +29,12 @@ img {
    display: none;
  }
 
- img.home-seccion-img{
+a {
    position: relative;
    filter: brightness(80%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
 
  .home-seccion {
@@ -128,6 +131,15 @@ h3.detalle-title-product {
 
 }
 
+.titulo-seccion {
+  background-color: #C9C9C9;
+  margin-top: 25px;
+  padding-left: 2%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+
+}
 
 @media (min-width:768px) {
   .home-slider {

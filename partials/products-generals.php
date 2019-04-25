@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -8,7 +8,15 @@
 
     <title>Productos</title>
   </head>
-  <body>
+  <body> -->
+  <div class="contenedor-productos">
+  <div class="titulo-seccion">
+    <div class="row">
+      <div class="col-12">
+      <h2>>>New Arrials | </h2>
+      </div>
+    </div>
+  </div>
     <div class="row">
       <div class="col-lg-3 col-md-6 col-xs-12">
         <div class="products-general">
@@ -93,18 +101,18 @@
         </div>
       </div>
     </div>
+</div>
+
+<!--
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
 
 
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
+<!--
   </body>
-</html>
+</html> -->

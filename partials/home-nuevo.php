@@ -21,7 +21,9 @@
     <div class="row">
       <div class="col-lg-3 col-md-6 col-xs-12">
         <div class="home-seccion">
+          <a href="products.php">
             <img class="home-seccion-img"src="images/foto-05.jpg" alt="newarrivals">
+            </a>
             <h2 class="home-title-seccion"> //NEW ARRIVALS </h2>
 
       </div>
