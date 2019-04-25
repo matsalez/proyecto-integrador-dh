@@ -13,7 +13,7 @@
   <div class="titulo-seccion">
     <div class="row">
       <div class="col-12">
-      <h2>>>New Arrials | </h2>
+      <h2>>>New Arrivals | </h2>
       </div>
     </div>
   </div>
@@ -101,6 +101,7 @@
         </div>
       </div>
     </div>
+    <a class="volver "href="index.php"> << Volver al home </a>
 </div>
 
 <!--

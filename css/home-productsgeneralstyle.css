@@ -141,6 +141,16 @@ h3.detalle-title-product {
 
 }
 
+.volver {
+  color: #C9C9C9;
+  margin-top: 20px;
+  padding-left: 1%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+
 @media (min-width:768px) {
   .home-slider {
     display: block;
