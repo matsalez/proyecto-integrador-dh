@@ -34,6 +34,9 @@
       <hr>
       <br>
       <button type="submit" class="btn btn-success">Ingresar</button>
+      <br>
+      <br>
+      <p class="registro"> Si no estas regritado, creá un usuario aquí </p>
     </form>
       </div>
       </div>

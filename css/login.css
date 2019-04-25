@@ -22,10 +22,8 @@ img {
 
 .logoform {
 
-  width: 70%;
+  width: 60%;
 }
-
-
 
 
  .formulario-login {
@@ -41,6 +39,12 @@ img {
    letter-spacing: 0.1em;
    background-color:  #E8E8E8;
 
+ }
 
+ p.registro {
+   font-family: 'Lato', sans-serif;
+   font-weight: 700;
+   letter-spacing: 0;
+   background-color:  #E8E8E8;
 
  }
