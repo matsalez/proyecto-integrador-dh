@@ -15,10 +15,6 @@
     <?php require_once('partials/header.php'); ?>
     <?php require_once('partials/home-nuevo.php'); ?>
     <?php require_once('partials/footer.php'); ?>
-    
+
   </body>
 </html>
-
-<!-- Inicio Footer -->
-
-<!-- Fin footer -->
