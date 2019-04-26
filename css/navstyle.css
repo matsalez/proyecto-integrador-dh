@@ -87,6 +87,9 @@ margin: 0px 0px 10px 0px;
 	position: absolute; /*para que no se vaya del padre contenedor (su columna)*/
 }
 
+ul.social-media {
+	display: none;
+}
 
 @media (max-width:998px) {
 
