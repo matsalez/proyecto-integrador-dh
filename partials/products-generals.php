@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-    <a class="volver "href="index.php"> << Volver al home </a>
+    <a class="volver "href="index.php"> << Home </a>
 </div>
 
 <!--

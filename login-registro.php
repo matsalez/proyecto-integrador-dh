@@ -49,7 +49,7 @@
                     <button type="submit" class="btn btn-success">Ingresar</button>
                     <br>
                     <br>
-                    <a class="volver "href="index.php"> << Volver al home </a>
+                    <a class="volver "href="index.php"> << Home </a>
               </form>
             </div>
           </div>

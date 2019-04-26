@@ -38,6 +38,10 @@
       <br>
       <a href="login-registro.php" class="registro"> Si no estas regritado, creá un usuario aquí
       </a>
+      <br>
+      <br>
+      <a href="index.php" class="registro"> << Home
+      </a>
     </form>
 
       </div>
