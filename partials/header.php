@@ -39,7 +39,7 @@
     					<li><a href="#camperas">Camperas</a></li>
               <li><a href="#camisas-vestidos">Camisas - Vestidos</a></li>
     					<li><a href="#buzos-Sweaters">Buzos - Sweaters</a></li>
-    					<li><a href="#jardineros-monos">ardineros - Monos</a></li>
+    					<li><a href="#jardineros-monos">Jardineros - Monos</a></li>
     					<li><a href="#sale">Sale</a></li>
     				</ul>
     			</li>
