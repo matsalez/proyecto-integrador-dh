@@ -36,8 +36,10 @@
       <button type="submit" class="btn btn-success">Ingresar</button>
       <br>
       <br>
-      <p class="registro"> Si no estas regritado, creá un usuario aquí </p>
+      <a href="login-registro.php" class="registro"> Si no estas regritado, creá un usuario aquí
+      </a>
     </form>
+
       </div>
       </div>
   </body>
