@@ -141,6 +141,14 @@ h3.detalle-title-product {
 
 }
 
+img.social-icon {
+  position: absolute;
+  top:35%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 10%;
+}
+
 .volver {
   color: #C9C9C9;
   margin-top: 20px;
