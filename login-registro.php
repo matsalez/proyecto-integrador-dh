@@ -50,13 +50,12 @@
                     <br>
                     <br>
                     <a class="volver "href="index.php"> << Home </a>
+
               </form>
             </div>
           </div>
           <div class="col-4">
-              <div class="imagen-registro">
-                  <img src="images/imagen-registro-02.jpg" alt="">
-              </div>
+                  <img class="imagen-registro" src="images/imagen-registro-02.jpg" alt="">
           </div>
       </div>
     </div>

@@ -68,9 +68,10 @@ img {
    text-align: center;
  }
 
-@media (min-width: 1190px) {
-  .imagen-registro {
+@media (min-width: 992px) {
+  img.imagen-registro {
     display: block;
+    height: 100%;
   }
 
 
