@@ -28,7 +28,7 @@
       <br>
       <input type="text" name="email" value="">
       <br>
-      <label for=""> Contraseña </label>
+      <label for=""> Contraseña: </label>
       <br>
       <input type="password" name="pass" value="">
       <hr>

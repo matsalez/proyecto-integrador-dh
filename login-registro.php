@@ -33,15 +33,15 @@
                     <br>
                     <input type="text" name="pass" value="">
                     <br>
-                    <label for=""> Confirmación de Email </label>
+                    <label for=""> Confirmación de Email: </label>
                     <br>
                     <input type="text" name="pass" value="">
                     <br>
-                    <label for=""> Contraseña </label>
+                    <label for=""> Contraseña: </label>
                     <br>
                     <input type="password" name="pass" value="">
                     <br>
-                    <label for=""> Confirmacion de Contraseña </label>
+                    <label for=""> Confirmacion de Contraseña: </label>
                     <br>
                     <input type="password" name="pass" value="">
                     <br>

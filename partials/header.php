@@ -25,8 +25,8 @@
               <button class="submit-search" type="submit" name="button"> <i class="fas fa-search"></i></button>
 
           <li><a href=#shop><span>Tu Carrito</span>  <i class="fas fa-shopping-cart"></i></a></li>
-          <li><a href=login.php> <span>Registrate</span><i class="fas fa-user-plus"></i></a></li>
-          <li><a href=#login> <span>ingresá</span><i class="fas fa-user"></i></a></li>
+          <li><a href=login-registro.php> <span>Registrate</span><i class="fas fa-user-plus"></i></a></li>
+          <li><a href=login.php> <span>ingresá</span><i class="fas fa-user"></i></a></li>
         </ul>
       <nav class="menu">
     		<ul >
