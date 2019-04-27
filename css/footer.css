@@ -6,8 +6,17 @@
 ul.social-media {
   display: none;
 }
-
+.main-footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 900px) {
+
+  hr.hrfooter {
+    display: none;
+  }
+  
   .main-footer {
     width: 100%;
     background-color: rgb(236, 236, 236);
