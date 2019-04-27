@@ -73,10 +73,10 @@
       <div class="col-lg-3 col-md-6 col-xs-12">
         <div class="products-general">
           <img class="products-general-img" src="images/new-07.jpg" alt="">
-          <h3 class="detalle-title-product"> CAMPERA JEAN ELENA </h3>
-          <h3 class="price"> $100 </h3>
+          <h3 class="detalle-title-product"> CAMPERA ARIA </h3>
+          <h3 class="price"> $200 </h3>
           <div class="boton">
-            COMPRAR
+            <a href="detalle-producto.php">COMPRAR</a>
           </div>
         </div>
       </div>

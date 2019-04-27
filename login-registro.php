@@ -46,7 +46,7 @@
                     <input type="password" name="pass" value="">
                     <br>
                     <br>
-                    <button type="submit" class="btn btn-success">Ingresar</button>
+                    <button type="submit" class="btn btn-success">Registrate</button>
                     <br>
                     <br>
                     <a class="volver "href="index.php"> << Home </a>

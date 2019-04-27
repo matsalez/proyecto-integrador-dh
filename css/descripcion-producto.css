@@ -21,6 +21,8 @@ img {
  }
 /*pagina de un producto*/
 
+
+
 .unproductoimagen{
 	background-image: url(images/producto.jpg);
 }
@@ -105,4 +107,13 @@ font-family: 'Lato',sans-serif;
 	padding-right: 30px;
 	background-color: #66D065;
 
+}
+
+.volver {
+  color: #2F2E2E;
+  margin-top: 20px;
+  padding-left: 1%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }

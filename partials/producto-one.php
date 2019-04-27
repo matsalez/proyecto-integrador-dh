@@ -40,4 +40,5 @@
     </div>
   </div>
 </div>
+<a class="volver "href="products.php"> << Productos </a>
 </div>
