@@ -1,0 +1,108 @@
+@import url("normalize.css");
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+   width: 100%;
+ }
+/*pagina de un producto*/
+
+.unproductoimagen{
+	background-image: url(images/producto.jpg);
+}
+
+.detalle-producto{
+	color:#434343;
+	text-transform: uppercase;
+}
+
+h3.titulo-producto {
+	color:#434343;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	font-size: 1.em;
+	letter-spacing: 0.5px
+
+}
+
+.precio-producto{
+	  color: #EA3F3F;
+	  line-height: 25px;
+	  font-family: 'Lato', sans-serif;
+	  font-weight: 600;
+	  font-size: 1.3em;
+
+
+}
+.descripcion{
+	font-size: 0.8em;
+	color: #434343;
+	font-weight: 300;
+
+
+}
+
+.color,
+.talles{
+	text-align: center;
+	display: block;
+	padding-right: 1em;
+	margin-top: 8px;
+	font-size: 0.7em;
+	text-transform: none;
+	height: 10px;
+}
+
+.dar-el-color,
+.dar-el-talle{
+display: block;
+text-align: center;
+display: inline;
+padding: 0.2em .6em .3em;
+font-size: 0.5em;
+font-family: 'Lato',sans-serif;
+}
+
+
+.elegir-color,
+.elegir-talle{
+	display: block;
+	max-width: 100%;
+	min-width: 75%;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border:1px;
+	border-color: rgba(84,84,84,0.5);
+}
+
+
+.boton-comprar{
+	display: flex;
+	justify-content: center;
+	max-width: auto;
+	height: 40px;
+	color: #fff;
+	margin: auto;
+	text-transform: uppercase;
+	border: none;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #66D065;
+
+}
