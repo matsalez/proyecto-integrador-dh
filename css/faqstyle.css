@@ -1,10 +1,6 @@
 * {
 	box-sizing: border-box;
 }
-body {
-
-}
-
 
 .faqcuerpo{
 
@@ -16,11 +12,13 @@ body {
 
 }
 
-.preguntas{
+.preguntas,.a{
    width: 100%;
    background-color: rgba(236, 236, 236,0.7);
    position: relative;
 	 font-size: 0.8em;
+	 text-decoration: none;
+	 color:black;
 
 }
 
@@ -29,6 +27,5 @@ body {
   background-color: rgba(245, 245, 245, 0.7);
   position: relative;
 	font-size: 0.8em;
-
 
 }
