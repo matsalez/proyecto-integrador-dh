@@ -25,7 +25,7 @@ img {
 }
 
 
-a.volver {
+a.volver-atras {
 	text-decoration: none;
 	color: #434343;
 	font-family: 'Lato', sans-serif;
@@ -69,7 +69,6 @@ hr.hrpreguntas {
 }
 
 
-
 a.volver {
   color: #2F2E2E;
   margin-top: 20px;
@@ -77,12 +76,4 @@ a.volver {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-}
-
-@media (min-width:992px) {
-	.faqrespuestasscroll {
-		overflow: auto;
-		height: 1400px;
-	}
-
 }
