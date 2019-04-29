@@ -10,7 +10,7 @@ Para poder correrlo vas a necesitar los siguientes programas instalados en tu ma
 
 Git - https://git-scm.com/
 XAMMP - https://www.apachefriends.org/es/index.html
-ATOM - https://atom.io/( o otro editor de programas) 
+ATOM - https://atom.io/( o otro editor de programas)
 CUENTA EN GIT-HUB-https://github.com
 
 Obtener los archivos
@@ -40,7 +40,7 @@ Lista de Archivos
       normalize.css
       tabladetalles.css
      >Images
-      foto-01.jpg 
+      foto-01.jpg
       foto-02.jpg
       foto-03.jpg
       foto-04.jpg
@@ -72,7 +72,7 @@ Lista de Archivos
       producto-one.php
       products-general.php
       tabladetalles.php
-      
+
 Fuentes y estilos de los archivos CSS
 -------------------------------------
 .Letra: "Lato", sans-serif Fuente -> http://Google.font.com
@@ -84,4 +84,10 @@ Fuentes y estilos de los archivos CSS
   #E8E8E8
   #434343
 
+  Desarrolladores
+  ---------------
 
+  Gabriela Aztarayn
+  Agustina Fernandez
+  Matiaz Gonzalez
+  Mara Veca

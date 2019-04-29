@@ -11,9 +11,7 @@
  <body>
    <div class="contenedorfaq">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-xs-12">
-                 <div class="faqcuerpo">
+                         <div class="faqcuerpo">
                             <h3 class="preguntas"><a class="titulo-preguntas" href="#pr1" >¿COMO COMPRAR?</a></h3>
                               <hr class="hrpreguntas">
                             <h3 class="preguntas"><a class="titulo-preguntas" href="#pr2">¿NECESITO TENER CUENTA PARA COMPRAR ONLINE?</a></h3>
@@ -77,10 +75,8 @@
                             <h3 class="preguntas"><a class="titulo-preguntas" href="#pr31">¿CUAL ES EL HORARIO DE ATENCION DE LA TIENDA?</a></h3>
                               <hr class="hrpreguntas">
                             <h3 class="preguntas"><a class="titulo-preguntas" href="#pr32">¿TENGO MAS PREGUNTAS, COMO LOS CONTACTO?</a></h3>
-                  </div>
-              </div>
-        <div class="col-lg-6 col-md-12 col-xs-12">
-          <div class="faqrespuestasscroll">
+
+
                             <br>
                             <p id="pr1" class="titulo-respuestas">¿COMO COMPRAR?</p>
                             <p class="respuestas">PODES COMPRAR EN NUESTRA PÁGINA “ISABELLA.COM.AR”, HACIENDO CLICK EN LOS DIFERENTES ENLACES. UNA VEZ QUE ELIJAS EL PRODUCTO,
@@ -105,7 +101,7 @@
                             <hr class="hrpreguntas">
                             <br>
                             <p id="pr4" class="titulo-respuestas">¿COMO SE MI TALLE?</p>
-                            <p class="respuestas"> ENTRANDO A ESTE <a href="partials/tabladetallesphp">LINK</a>, TENDRAS DIFERENTES TABLAS QUE TE PERMITAN DE ACUERDO A TUS MEDIDAS ELERGIR ADECUADAMENTE EL TALLE.--> VOLVER</p>
+                            <p class="respuestas"> ENTRANDO A ESTE <a href="tabladetalles.php">LINK</a>, TENDRAS DIFERENTES TABLAS QUE TE PERMITAN DE ACUERDO A TUS MEDIDAS ELERGIR ADECUADAMENTE EL TALLE.--> VOLVER</p>
                             <a  class="volver" href="#">VOLVER</a>
                             <br>
                             <br>
@@ -340,16 +336,11 @@
                             <br>
                             <hr class="hrpreguntas">
 
-                          </div>
+                        </div>
                       </div>
-                  </div>
-                </div>
-       </div>
        <a class="volver "href="index.php"> << Home </a>
   </body>
 </html>
-
-
 
   <br>
                   <!-- <p class="respuestas" id="como_comprar">PARA RECUPERAR TU CONTRASEÑA ENTRA ACA PARA PODER REINICIARLA Y USA UNA NUEVA PARA VOLVER A -->
