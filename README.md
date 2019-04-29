@@ -1,82 +1,15 @@
 Proyecto-Integrador-dh
 ======================
 
-Este proyecto integrador propuesto por Digital House con el fin de generar un sitio responsive aplicando las herramientas aprendidas, trabajando en equipo y respondiendo al primer SPRINT.-
+Temática elegida: E-market
+En este proyecto, es armar una web de e-market en donde se vende ropa para una marca llamada "Isabella". 
 
-Requerimientos para correrlo localmente
-----------------------------------------
-
-Para poder correrlo vas a necesitar los siguientes programas instalados en tu maquina:
-
-Git - https://git-scm.com/
-XAMMP - https://www.apachefriends.org/es/index.html
-ATOM - https://atom.io/( o otro editor de programas)
-CUENTA EN GIT-HUB-https://github.com
-
-Obtener los archivos
---------------------
-Para obtener una copia, puedes clonar el repositor a traves de este link "https://github.com/matsalez/proyecto-integrador-dh" con comandos de GIT ( git clone ( url)) , logueandote con tu usuario en la plataforma on-line de GIT-HUB.-
-
-Lista de Archivos
------------------
-
-/Proyecto-integrado-dh
-  .git
-  detalle-producto.php
-  index.php
-  login.php
-  login-registro.php
-  producto.php
-    >css
-      bootstrap-grid.css
-      bootstrap-grid-min.css
-      descripcion-producto.css
-      faqstyle.css
-      footer.css
-      home-productsgeneralstyle.css
-      login.css
-      login-registro.css
-      navstyle.css
-      normalize.css
-      tabladetalles.css
-     >Images
-      foto-01.jpg
-      foto-02.jpg
-      foto-03.jpg
-      foto-04.jpg
-      foto-05.jpg
-      foto-06.jpg
-      foto-07.jpg
-      foto-08.jpg
-      imagen-registro-02.jpg
-      logo.png
-      new-01.jpg
-      new-02.jpg
-      new-03.jpg
-      new-04.jpg
-      new-05.jpg
-      new-06.jpg
-      new-07.jpg
-      new-08.jpg
-      producto.jpg
-      social-09.png
-      social-10.png
-      social-11.png
-      tabla de talles.jpg
-     >Partials
-      faq.php
-      faqtexto.docx
-      footer.php
-      header.php
-      home-nuevo.php
-      producto-one.php
-      products-general.php
-      tabladetalles.php
+Logo> imagen png / Isabella / 208x71px
 
 Fuentes y estilos de los archivos CSS
 -------------------------------------
-.Letra: "Lato", sans-serif Fuente -> http://Google.font.com
-.Disposicion de imagenes -> https://getbootstrap.com/
+.Tipografia:-->Body --> "Lato", sans-serif Fuente -> http://Google.font.com
+.Disposicion de grilla -> https://getbootstrap.com/
 
 .Colores utilizados:
   rgb(236, 236, 236)  
@@ -84,8 +17,25 @@ Fuentes y estilos de los archivos CSS
   #E8E8E8
   #434343
 
-  Desarrolladores
-  ---------------
+. Para poder ver la secuencia de index.html >>> productos.html >>> producto.html
+En index ir a los 4 bloques : new arrivals/ LOOKBOOK/ collection/ accesorios, pede ser LOOKBOOK (en donde se encuentran las fotos) > una vez que le doy click a lookbook me lleva a la pagina de productos.php y para poder ver el la pagina de cada producto, hay que ir al producto "campera aria" > comprar >detalle-producto.php
+
+.HEADER >
+Lato/ font-size:25px / background-color: rgba(230, 230, 230, 0.3)
+
+.BODY>
+<h1> "tabla de talles" / font-size: 2em / font-family: Lato /
+<h3> font size: 0.8em / Color: #434343 / font-family: Lato / 
+<Btn (comprar)> background.color: #66D065 / font size: 0.7em / color: #fff /
+<p> font-family: Lato/ font-size:0.9em
+<form> background-color:  #E8E8E8;
+<img> .png .jpg / width: 100%
+
+.FOOTER>
+<a> color: #191C26
+
+Desarrolladores
+---------------
 
   Gabriela Aztarayn
   Agustina Fernandez
