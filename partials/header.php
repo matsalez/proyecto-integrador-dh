@@ -25,8 +25,8 @@
               <button class="submit-search" type="submit" name="button"> <i class="fas fa-search"></i></button>
 
           <li><a href=#shop><span>Tu Carrito</span>  <i class="fas fa-shopping-cart"></i></a></li>
-          <li><a href=login.php> <span>Registrate</span><i class="fas fa-user-plus"></i></a></li>
-          <li><a href=#login> <span>ingresá</span><i class="fas fa-user"></i></a></li>
+          <li><a href=login-registro.php> <span>Registrate</span><i class="fas fa-user-plus"></i></a></li>
+          <li><a href=login.php> <span>ingresá</span><i class="fas fa-user"></i></a></li>
         </ul>
       <nav class="menu">
     		<ul >
@@ -39,7 +39,7 @@
     					<li><a href="#camperas">Camperas</a></li>
               <li><a href="#camisas-vestidos">Camisas - Vestidos</a></li>
     					<li><a href="#buzos-Sweaters">Buzos - Sweaters</a></li>
-    					<li><a href="#jardineros-monos">ardineros - Monos</a></li>
+    					<li><a href="#jardineros-monos">Jardineros - Monos</a></li>
     					<li><a href="#sale">Sale</a></li>
     				</ul>
     			</li>
@@ -73,83 +73,6 @@
       <!-- FIN Jquery Script utilizado para el desplegue del menu -->
 
     </header>
-    <!-- FIN header -->
+  
 
-    <!-- INICIO Relleno body -->
-    <!-- <div class="container">
-    <div class="banner row ">
-      <a href="#coleccion"></a> -->
-    <!--  <img class="banner-coleccion"src="../images/banner-coleccion.jpg" alt="banner-coleccion"> -->
-    <!-- </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> -->
-    <!-- Fin relleno -->
-
-  <!-- </body> -->
 </html>

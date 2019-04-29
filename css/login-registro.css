@@ -1,0 +1,78 @@
+@import url("normalize.css");
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+   width: 100%;
+ }
+
+
+
+.imagen-registro {
+  display: none;
+}
+
+
+.fondo {
+   background-color:  #E8E8E8;
+}
+
+.logoform {
+  width: 60%;
+}
+
+
+ .formulario-login {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 10%;
+   color: #434343;
+   line-height: 25px;
+   font-family: 'Lato', sans-serif;
+   font-weight: 700;
+   letter-spacing: 0.1em;
+   background-color:  #E8E8E8;
+ }
+
+ p.registro {
+   font-family: 'Lato', sans-serif;
+   font-weight: 700;
+   letter-spacing: 0;
+   background-color:  #E8E8E8;
+
+ }
+
+ .volver {
+   color: #434343;
+   margin-top: 20px;
+   padding-left: 1%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+@media (min-width: 992px) {
+  img.imagen-registro {
+    display: block;
+    height: 100%;
+  }
+
+
+}

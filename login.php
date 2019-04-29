@@ -28,7 +28,7 @@
       <br>
       <input type="text" name="email" value="">
       <br>
-      <label for=""> Contraseña </label>
+      <label for=""> Contraseña: </label>
       <br>
       <input type="password" name="pass" value="">
       <hr>
@@ -36,8 +36,14 @@
       <button type="submit" class="btn btn-success">Ingresar</button>
       <br>
       <br>
-      <p class="registro"> Si no estas regritado, creá un usuario aquí </p>
+      <a href="login-registro.php" class="registro"> Si no estas regritado, creá un usuario aquí
+      </a>
+      <br>
+      <br>
+      <a href="index.php" class="registro"> << Home
+      </a>
     </form>
+
       </div>
       </div>
   </body>
