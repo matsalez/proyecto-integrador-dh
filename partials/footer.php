@@ -9,10 +9,10 @@
   <br>
   <br>
   <ul class="sections-faq">
-    <li><a href="#como-comprar">¿Cómo comprar?</a></li>
-    <li><a href="#envios">Envíos</a>
-    <li><a href="#devoluciones">Devoluciones</a></li>
-    <li><a href="#talles-locales">Talles y locales</a>
+    <li><a href="faq-index.php#pr1">¿Cómo comprar?</a></li>
+    <li><a href="faq-index.php#pr12">Envíos</a>
+    <li><a href="faq-index.php#pr24">Devoluciones</a></li>
+    <li><a href="faq-index.php#pr4">Talles y locales</a>
     <li><a href="#trabaja-con-nosotros">Trabajá con nosotros</a></li>
     <li><a href="#quienes-somos">Quienés somos </a>
     <li><a href="#contacto">Contacto</a></li>
