@@ -4,21 +4,7 @@
   box-sizing: border-box;
 }
 
-ul, ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-   width: 100%;
- }
 
 .home {
   clear: both;

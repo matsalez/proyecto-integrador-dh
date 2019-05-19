@@ -1,3 +1,20 @@
+<!-- INICIO Script utilizado para el desplegue del menu, primero se ejecuta el código HTML arriba y luego este script -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.submenu').click(function(){
+      $(this).children('ul').slideToggle();
+})
+})
+      $(document).ready(function(){
+        $('ul').click(function(i){
+          i.stopPropagation();
+
+  })
+  })
+</script>
+
+<!-- FIN Jquery Script utilizado para el desplegue del menu -->
+
 <footer class="main-footer">
   <br class="brfooter">
   <hr class="hrfooter">
@@ -18,3 +35,5 @@
     <li><a href="#contacto">Contacto</a></li>
 
 </footer>
+</body>
+</html>

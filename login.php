@@ -1,50 +1,85 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,700,900" rel="stylesheet">
-  <title>Login</title>
-</head>
-  <body>
-    <div class="container">
+<?php
 
-<div class="formulario-login">
+	require_once 'register-login-controller.php';
 
-    <form class="login" action="index.html" method="post">
-      <img class="logoform"src="images/logo.png" alt="">
+	// Si está logueda la persona la redirijo al profile
+	if ( isLogged() ) {
+		header('location: profile.php');
+		exit;
+	}
+
+	$pageTitle = 'Login';
+	require_once 'partials/head.php';
+
+	$errorsInLogin = [];
+
+	$email = '';
+	$user = '';
+
+	if ($_POST) {
+
+		$user = trim($_POST['user']);
+		$email = trim($_POST['email']);
+
+		$errorsInLogin = loginValidate();
+
+		if ( !$errorsInLogin ) {
+
+			$userToLogin = getUserByEmail($email);
+
+			if ( isset($_POST['rememberUser']) ) {
+				setcookie('userLoged', $email, time() + 3000);
+			}
+
+			login($userToLogin);
+		}
+	}
+
+
+?>
+
+  <div class="formulario-login">
+
+    <form class="login" method="post">
+      <img class="logoform"src="images/brakeup-logo.png" alt="">
       <br>
       <br>
-      <label for=""> Usuario: </label>
+      <label for=""> Usuario: <span class="invalid-feedback"><?= isset($errorsInLogin['user']) ? $errorsInLogin['user'] : null; ?> </span> </label>
       <br>
-      <input type="text" name="user" value="">
+      <input
+			type="text"
+			name="user"
+			value="<?= $user; ?>">
       <br>
-      <label for=""> Email: </label>
+      <label for=""> Email: <span class="invalid-feedback"><?= isset($errorsInLogin['email']) ? $errorsInLogin['email'] : null; ?> </span> </label>
       <br>
-      <input type="text" name="email" value="">
+      <input
+			type="text"
+			name="email"
+			value="<?= $email; ?>">
       <br>
-      <label for=""> Contraseña: </label>
+      <label for=""> Contraseña: <span class="invalid-feedback"><?= isset($errorsInLogin['password']) ? $errorsInLogin['password'] : null; ?> </span></label>
       <br>
-      <input type="password" name="pass" value="">
+      <input
+			type="password"
+			name="password"
+			value="">
       <hr>
+			<label class="form-check-label">
+				<input class="form-check-input" type="checkbox" name="rememberUser">
+				Recordarme
+			</label>
       <br>
-      <button type="submit" class="btn btn-success">Ingresar</button>
+      <button type="submit" class="btn btn-success"><b>Ingresar</b></button>
       <br>
       <br>
-      <a href="login-registro.php" class="registro"> Si no estas regritado, creá un usuario aquí
-      </a>
+      <a href="login-registro.php" class="registro"> Si no estas regritado, creá un usuario aquí </a>
       <br>
       <br>
-      <a href="index.php" class="registro"> << Home
-      </a>
+			<a class="volver" href="index.php"> <span><< Home</span> </a>
     </form>
 
       </div>
       </div>
-  </body>
-</html>
+
+      <?php require_once 'partials/footer.php'; ?>

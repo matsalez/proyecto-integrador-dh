@@ -1,15 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en" dir="ltr"> -->
-  <!-- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/navstyle.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <!-- CDN Jquery-->
-    <!-- <title>Isabella</title>
-  <!-- </head> -->
-  <!-- <body> -->
-    <!-- INICIO header -->
     <header class="main-header">
         <input type="checkbox" id="btn-menu">
         <label for="btn-menu" class="fas fa-bars boton-menu"> </label>
@@ -20,7 +8,7 @@
           <aside class="cambios">
           CAMBIOS Y DEVOLUCIONES EN TODOS NUESTROS LOCALES
           </aside>
-          <li><form class="formulario" method="get" action="procesar.php">
+          <li><form class="formulario" method="get" >
           		<input type="text" name="termino_busqueda"> </li>
               <button class="submit-search" type="submit" name="button"> <i class="fas fa-search"></i></button>
 
@@ -31,7 +19,7 @@
       <nav class="menu">
     		<ul >
     			<li><a href="#newarrivals">New arrivals</a></li>
-    			<li class="submenu"><a href="#coleccion">Colección <span><i class="fas fa-angle-down"></i></span></a>
+    			<li class="submenu"><a href="#coleccion">Colección  <i class="fas fa-angle-down"></i></a>
     				 <ul>
     					<li><a href="#pantalones">Pantalones</a></li>
     					<li><a href="#remeras">Remeras</a></li>
@@ -48,31 +36,11 @@
           <li><a href="#lookbook">Lookbook</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <div class="redes-nav">
-            <li><a href='http://www.twitter.com/brakeup'><i class="fab fa-twitter"></i></a> </li>
-            <li><a href='http://www.facebook.com/brakeup'><i class="fab fa-facebook"></i></a></li>
-            <li><a href='http://www.instagram.com/brakeup'><i class="fab fa-instagram"></i></a></li>
+            <li><a href='http://www.twitter.com'><i class="fab fa-twitter"></i></a> </li>
+            <li><a href='http://www.facebook.com'><i class="fab fa-facebook"></i></a></li>
+            <li><a href='http://www.instagram.com'><i class="fab fa-instagram"></i></a></li>
           </div>
     		</ul>
-
     	</nav>
-      <!-- INICIO Script utilizado para el desplegue del menu, primero se ejecuta el código HTML arriba y luego este script -->
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.submenu').click(function(){
-            $(this).children('ul').slideToggle();
-      })
-      })
-            $(document).ready(function(){
-              $('ul').click(function(i){
-                i.stopPropagation();
-
-        })
-        })
-      </script>
-
-      <!-- FIN Jquery Script utilizado para el desplegue del menu -->
 
     </header>
-  
-
-</html>

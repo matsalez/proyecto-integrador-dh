@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/tabladetalles.css">
-    <title>ISABELLA-TABLA DE TALLES</title>
+    <title>Brake Up-TABLA DE TALLES</title>
   </head>
   <body>
     <div class="container">

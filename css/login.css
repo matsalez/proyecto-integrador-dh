@@ -1,23 +1,7 @@
 @import url("normalize.css");
+@import url("bootstrap-grid.min.css");
 
-* {
-  box-sizing: border-box;
-}
 
-ul, ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-img {
-   width: 100%;
- }
 
 .logoform {
 
@@ -47,4 +31,13 @@ img {
    background-color:  #E8E8E8;
    color: #434343;
 
+ }
+
+ .volver span{
+   border-color: transparent;
+   border-radius: 10px;
+   color: white;
+   padding: 5px;
+   background-color: rgb(102, 102, 102);
+   cursor: pointer;
  }

@@ -1,15 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/home-productsgeneralstyle.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap-grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,700,900" rel="stylesheet">
-    <title>Home</title>
-  </head> -->
-  <!-- <body> -->
-
   <div class="home">
     <div class="row">
       <div class="col-12">
@@ -63,7 +51,7 @@
     <div class="row">
       <div class="col-lg-4 col-md-4 col-xs-12">
         <div class="home-socialmedia">
-          <a class="imagen-home" href="products.php">
+          <a class="imagen-home" href="https://www.facebook.com/brakeupoficial/ ">
             <img src="images/foto-02.jpg" alt="">
             </a>
             <img class="social-icon" src="images/social-10.png" alt="">
@@ -72,7 +60,7 @@
       <div class="col-lg-4 col-md-4 col-xs-12">
 
         <div class="home-socialmedia">
-      <a class="imagen-home" href="products.php">
+      <a class="imagen-home" href="https://www.instagram.com/brakeupoficial/">
             <img src="images/foto-03.jpg" alt="">
             </a>
               <img class="social-icon" src="images/social-11.png" alt="">
@@ -80,7 +68,7 @@
       </div>
       <div class="col-lg-4 col-md-4 col-xs-12">
         <div class="home-socialmedia">
-          <a class="imagen-home" href="products.php">
+          <a class="imagen-home" href="https://www.twitter.com">
             <img src="images/foto-04.jpg" alt="">
             </a>
               <img class="social-icon" src="images/social-09.png" alt="">
@@ -88,5 +76,3 @@
       </div>
     </div>
 </div>
-  <!-- </body> -->
-<!-- </html> -->
