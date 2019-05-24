@@ -20,8 +20,6 @@ img {
    width: 100%;
  }
 
-
-
 .imagen-registro {
   display: none;
 }
@@ -36,7 +34,7 @@ img {
 }
 
 
- .formulario-login {
+ .formulario-registro {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -59,9 +57,12 @@ img {
  }
 
  .volver {
-   color: #434343;
-   margin-top: 20px;
-   padding-left: 1%;
+   border-color: transparent;
+   border-radius: 10px;
+   color: white;
+   padding: 5px;
+   background-color: rgb(102, 102, 102);
+   cursor: pointer;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -79,6 +80,7 @@ img {
    background-color: rgb(14, 171, 9);
    cursor: pointer;
  }
+
  .volver span{
    border-color: transparent;
    border-radius: 10px;
@@ -87,6 +89,7 @@ img {
    background-color: rgb(102, 102, 102);
    cursor: pointer;
  }
+
  input  {
    border-color: transparent;
    border-radius: 10px;

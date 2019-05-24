@@ -32,8 +32,8 @@ width: 100%;
 .main-header {
 	width: 100%;
 	height: 50px;
-	background-color: rgba(230, 230, 230, 0.3);
-	color: rgb(0, 0, 0);
+	background-color: rgba(240, 240, 240, 0.3);
+
 }
 
 
@@ -56,10 +56,11 @@ margin: 0px 0px 10px 0px;
 
 
 .menu ul {
-	background-color: rgba(236, 236, 236,0.5);
+	background-color: rgba(191, 190, 190);
 	display: flex;
 
 }
+
 
 .menu ul ul{
 	display: none;
@@ -74,7 +75,7 @@ margin: 0px 0px 10px 0px;
 }
 
 .menu a:hover {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(180, 180, 180, 0.8);
 
 }
 
@@ -153,14 +154,14 @@ margin: 0px 0px 10px 0px;
 	} /*Cuando haga clic en el botón "menu" se translade sobre su eje Y*/
 
 	.menu ul ul {
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(159, 159, 159, 0.5);
 	}
 
 	.redes-nav {
 		display: flex;
 		flex-direction: row;
 		padding: 0px;
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(167, 167, 167, 0.5);
 		width: 100%;
 	}
 
@@ -215,6 +216,7 @@ height: 60px;
 	text-decoration: none;
 	color: black;
 }
+
 
 .redes-nav  {
 	display: flex;

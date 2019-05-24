@@ -1,14 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/home-productsgeneralstyle.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
 
-    <title>Productos</title>
-  </head>
-  <body> -->
   <div class="contenedor-productos">
   <div class="titulo-seccion">
     <div class="row">
@@ -76,7 +66,7 @@
           <h3 class="detalle-title-product"> CAMPERA ARIA </h3>
           <h3 class="price"> $2000 </h3>
           <div class="boton">
-            <a href="detalle-producto.php">COMPRAR</a>
+            <a href="detail-product.php">COMPRAR</a>
           </div>
         </div>
       </div>

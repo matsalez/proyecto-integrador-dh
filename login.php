@@ -41,7 +41,7 @@
   <div class="formulario-login">
 
     <form class="login" method="post">
-      <img class="logoform"src="images/brakeup-logo.png" alt="">
+      <img class="logoform"src="images/logo.png" alt="">
       <br>
       <br>
       <label for=""> Usuario: <span class="invalid-feedback"><?= isset($errorsInLogin['user']) ? $errorsInLogin['user'] : null; ?> </span> </label>
@@ -73,7 +73,7 @@
       <button type="submit" class="btn btn-success"><b>Ingresar</b></button>
       <br>
       <br>
-      <a href="login-registro.php" class="registro"> Si no estas regritado, creá un usuario aquí </a>
+      <a href="login-registro.php" class="registro"> Si no estas regristado, creá un usuario aquí </a>
       <br>
       <br>
 			<a class="volver" href="index.php"> <span><< Home</span> </a>
@@ -81,5 +81,4 @@
 
       </div>
       </div>
-
       <?php require_once 'partials/footer.php'; ?>

@@ -7,17 +7,32 @@
 	$pageTitle = 'Registro';
 	require_once 'partials/head.php';
 
+  $countries = [
+      'ar' => 'Argentina',
+      'br' => 'Brasil',
+      'pr' => 'Perú',
+      'bl' => 'Bolivia',
+      'mx' => 'México',
+      'ch' => 'Chile',
+      'pa' => 'Paraguay',
+      'ur' => 'Uruguay',
+  ];
 
   $errorsInRegister = [];
 
-  
+  // Variables para persitir
+
+  $user = '';
   $name = '';
   $email = '';
+  $countryFromPost = '';
 
   if ($_POST) {
 
+    $user = trim($_POST['user']);
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
+    $countryFromPost = $_POST['country'];
 
   $errorsInRegister = registerValidate();
 
@@ -42,17 +57,42 @@
         <div class="col-lg-8 col-md-12">
 
 
-            <div class="formulario-login">
+            <div class="formulario-registro">
                 <form class="login"  method="post" enctype="multipart/form-data">
-                    <img class="logoform"src="images/brakeup-logo.png" alt="">
+                    <img class="logoform"src="images/logo.png" alt="logo-isabella">
+
                     <br>
+                    <label for=""> Usuario: <span class="invalid-feedback"><?= isset($errorsInRegister['user']) ? $errorsInRegister['user'] : null; ?> </span> </label>
                     <br>
+                    <input
+                    type="text"
+                    name="user"
+                    value="<?= $user; ?>">
+                    <br>
+
                     <label for=""> Nombre Completo: <span class="invalid-feedback"><?= isset($errorsInRegister['name']) ? $errorsInRegister['name'] : null; ?> </span> </label>
                     <br>
                     <input
                     type="text"
                     name="name"
                     value="<?= $name; ?>">
+                    <br>
+                    <label> Pais de Nacimiento:</label>
+                    <br>
+                    <select name="country">
+                        <option value="">Elegí un país</option>
+                        <?php foreach ($countries as $code => $country): ?>
+                          <option value="<?= $code ?>"
+                            <?= $code == $countryFromPost ? 'selected' : null; ?>>
+                            <?= $country ?>
+                          </option>
+                        <?php endforeach; ?>
+                    </select>
+                    <div class="invalid-feedback">
+                        <?= isset($errorsInRegister['country']) ? $errorsInRegister['country'] : null; ?>
+                      </div>
+
+                    <hr>
                     <br>
                     <label for=""> Email: <span class="invalid-feedback"><?= isset($errorsInRegister['email']) ? $errorsInRegister['email'] : null; ?> </span></label>
                     <br>

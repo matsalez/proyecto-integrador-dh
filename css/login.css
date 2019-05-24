@@ -9,20 +9,19 @@
 }
 
 
- .formulario-login {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   padding: 20%;
-   color: #434343;
-   line-height: 25px;
-   font-family: 'Lato', sans-serif;
-   font-weight: 700;
-   letter-spacing: 0.1em;
-   background-color:  #E8E8E8;
-
- }
+.formulario-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5%;
+  color: #434343;
+  line-height: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background-color:  #E8E8E8;
+}
 
  .registro {
    font-family: 'Lato', sans-serif;
@@ -34,6 +33,10 @@
  }
 
  .volver span{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
    border-color: transparent;
    border-radius: 10px;
    color: white;

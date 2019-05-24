@@ -13,21 +13,33 @@
 	function registerValidate(){
 		$errors = [];
 
+		$user = trim($_POST['user']);
 		$name = trim($_POST['name']);
+		$country = $_POST['country'];
 		$email = trim($_POST['email']);
     $emailConfirmation = trim($_POST['emailConfirmation']);
 		$password = trim($_POST['password']);
 		$rePassword = trim($_POST['rePassword']);
 		$avatar = $_FILES['avatar'];
 
+		if ( empty($user) ) {
+			$errors['user'] = 'El campo usuario no puede estar vacío';
+		} elseif ( userExist($user) ) { // Si no existe el user
+			 $errors['user'] = 'Este usuario está registrado en nuestra base de datos';
+		}
+
 		if ( empty($name) ) {
 			$errors['name'] = 'El campo nombre no puede estar vacío';
 		} //Si el nombre esta vacio en la posicion 'name' del array vacio error va a ejecutar la frase que pongamos
-
+		if ( empty($country) ) {
+				 $errors['country'] = 'Elegí un país';
+			 }
 		if ( empty($email) ) {
 			$errors['email'] = 'El campo email es obligatorio';
 		} elseif ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) {
 			$errors['email'] = 'Introducí un formato de email válido';
+		} elseif ( emailExist($email) ) { // Si no existe el email
+			 $errors['email'] = 'Ese correo está registrado en nuestra base de datos';
 		}
     if ( empty($emailConfirmation) ) {
       $errors['emailConfirmation'] = 'El campo confirmar email es obligatorio';
@@ -37,9 +49,13 @@
     	$errors['emailConfirmation'] = 'Los emails no coinciden';
     }
 
-		if ( empty($password) ) {
-			$errors['password'] = 'El campo contraseña es obligatorio';
-		}
+		if(empty($password)){
+	    $errors['password']='El campo de contraseña no puede estar vacio';
+	  } elseif (!strlen($password)>5) {
+	    $errors['password']='La contraseña debe tener mas de 5 caracteres';
+	  } elseif ( strpos($password, "DH") === false || strpos($password, "DH") < 0) {
+	    $errors['password']='la contraseña debe tener las letras DH';
+	  }
 
 		if ( empty($rePassword) ) {
 			$errors['rePassword'] = 'El campo repetir contraseña es obligatorio';
@@ -110,7 +126,10 @@
 	// Función para guardar al usuario
 	function saveUser() {
 		// Trimeamos los valores que vinieron por $_POST
+
+		$_POST['user'] = trim($_POST['user']);
 		$_POST['name'] = trim($_POST['name']);
+		$_POST['country'] = trim($_POST['country']);
 		$_POST['email'] = trim($_POST['email']);
 
 		// Hasheo el password del usuario
@@ -167,7 +186,21 @@
 				return true;
 			}
 		}
+		// Si termino de recorrer el array y no se encontró al email que pasé como parámetro
+		return false;
+	}
 
+	function userExist($user) {
+		// Traigo a todos los usuarios
+		$allUsers = getAllUsers();
+
+		// Recorro el array de usuarios
+		foreach ($allUsers as $oneUser) {
+			// Si la posición "user" del usuario en la iteración coincide con el email que pasé como parámetro
+			if ($oneUser['user'] == $user) {
+				return true;
+			}
+		}
 		// Si termino de recorrer el array y no se encontró al email que pasé como parámetro
 		return false;
 	}
@@ -183,6 +216,8 @@
 
 		if ( empty($user) ) {
 			$errors['user'] = 'El campo usuario no puede estar vacío';
+		} elseif ( !userExist($user) ) { // Si no existe el user
+			 $errors['user'] = 'Este usuario no está registrado en nuestra base de datos';
 		}
 
 		if ( empty($email) ) {
@@ -190,8 +225,8 @@
 		} elseif ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) { // Si el campo $email no es un email válido
 			$errors['email'] = 'Introducí un formato de email válido';
 		} elseif ( !emailExist($email) ) { // Si no existe el email
-			// $errors['email'] = 'Ese correo no está registrado en nuestra base de datos';
-			$errors['email'] = 'Las credenciales no coinciden';
+			 $errors['email'] = 'Ese correo no está registrado en nuestra base de datos';
+
 		} else {
 			// Si pasamos las 3 validaciones anteriores, busco y  obtengo al usuario con el email que llegó por $_POST
 			$theUser = getUserByEmail($email);
