@@ -40,4 +40,4 @@ Desarrolladores
   Gabriela Aztarayn
   Agustina Fernandez
   Matiaz Gonzalez
-  Mara Vega
+  Mara Veca

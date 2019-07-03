@@ -1,5 +1,7 @@
 <?php
 
+	require_once 'conexion.php';
+
 	// Inicio la sesión
 	session_start();
 
@@ -63,15 +65,15 @@
 			$errors['rePassword'] = 'Las contraseñas no coinciden';
 		}
 
-		if ( $avatar['error'] != UPLOAD_ERR_OK ) { //si avatar que es un array en la posicion 'error' es distinto a error ok. Es decir, hay error.
-			$errors['avatar'] = 'Subí una imagen';
-		} else {
-			$ext = pathinfo($avatar['name'], PATHINFO_EXTENSION); //sacamos la extensión del archivo
-
-			if ( !in_array($ext, ALLOWED_IMAGE_FORMATS) ) { //en el array no esta la extensión permitida
-				$errors['avatar'] = 'Los formatos permitidos son JPG, PNG y GIF';
-			}
-		}
+		// if ( $avatar['error'] != UPLOAD_ERR_OK ) { //si avatar que es un array en la posicion 'error' es distinto a error ok. Es decir, hay error.
+		// 	$errors['avatar'] = 'Subí una imagen';
+		// } else {
+		// 	$ext = pathinfo($avatar['name'], PATHINFO_EXTENSION); //sacamos la extensión del archivo
+		//
+		// 	if ( !in_array($ext, ALLOWED_IMAGE_FORMATS) ) { //en el array no esta la extensión permitida
+		// 		$errors['avatar'] = 'Los formatos permitidos son JPG, PNG y GIF';
+		// 	}
+		// }
 
 		return $errors;
 	}
@@ -94,67 +96,42 @@
 
 		// Guardamos la imagen en nuestra carpeta
 		move_uploaded_file($tempFile, $finalPath);
-
 		// Retorno el nombre de la imagen para poder guardar el mismo en el JSON
 		return $finalName;
 	}
-	// Función para generar un ID
-	function generateID() {
-		$allUsers = getAllUsers();
 
-		if ( count($allUsers) == 0 ) {
-			return 1;
-		}
-		$lastUser = array_pop($allUsers);
-
-
-		return $lastUser['id'] + 1;
-	}
-
-
-	// Función traer todo del JSON
 	function getAllUsers() {
+		global $base;
 
-		$fileContent = file_get_contents(USERS_JSON_PATH);
-
-		// Decodifico el JSON a un array asociativo, importante el "true"
-		$allUsers = json_decode($fileContent, true);
-
+		$consulta = $base->query("SELECT * from allusers");
+		$allUsers = $consulta->fetchAll(PDO::FETCH_ASSOC);
 		return $allUsers;
 	}
 
 	// Función para guardar al usuario
-	function saveUser() {
-		// Trimeamos los valores que vinieron por $_POST
+	function saveUser($file) {
+	//	Trimeamos los valores que vinieron por $_POST
 
-		$_POST['user'] = trim($_POST['user']);
-		$_POST['name'] = trim($_POST['name']);
-		$_POST['country'] = trim($_POST['country']);
-		$_POST['email'] = trim($_POST['email']);
+		$user = trim($_POST['user']);
+		$name = trim($_POST['name']);
+		$country = trim($_POST['country']);
+		$email = trim($_POST['email']);
+		$avatar = $file;
+		$img = saveImage();
+		//Hasheo el password del usuario
+		$password = $_POST['password'] = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
 
-		// Hasheo el password del usuario
-		$_POST['password'] = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
+		try {
+			global $base;
 
-		// Genero el ID y lo guardo en una posición de $_POST llamada "id"
+			$consulta = $base->prepare("insert into allusers (user, name, country, email, password, avatar) values ('$user', '$name', '$country', '$email', '$password','$avatar')");
+			$consulta->execute([$user, $name, $country, $email, $password, $avatar]);
+		} catch(PDOException $error) {
+			die('Error de base de datos en el guardado');
+		}
 
-		$_POST['id'] = generateID();
 
-		unset($_POST['rePassword']);
-
-		$finalUser = $_POST;
-
-		$allUsers = getAllUsers();
-
-		$allUsers[] = $finalUser;
-
-		file_put_contents(USERS_JSON_PATH, json_encode($allUsers));
-
-		return $finalUser;
-	}
-	// Función para loguear al usuario
-	/*
-		Recibe como parámetro un array que contenga la información del usuario.
-	*/
+}
 	function login($user) {
 		// Del usuario que recibo saco la posición "password" pues no me interesa tenerla en sesión
 		unset($user['password']);
@@ -196,6 +173,7 @@
 
 		// Recorro el array de usuarios
 		foreach ($allUsers as $oneUser) {
+
 			// Si la posición "user" del usuario en la iteración coincide con el email que pasé como parámetro
 			if ($oneUser['user'] == $user) {
 				return true;
@@ -229,10 +207,10 @@
 
 		} else {
 			// Si pasamos las 3 validaciones anteriores, busco y  obtengo al usuario con el email que llegó por $_POST
-			$theUser = getUserByEmail($email);
+			$oneUser = getUserByEmail($email);
 
 			// Si el password que recibí por $_POST NO coincide con el password hasheado que está guardado en el usuario
-			if ( !password_verify($password, $theUser['password']) ) {
+			if ( !password_verify($password, $oneUser['password']) ) {
 				$errors['password'] = 'Las credenciales no coinciden';
 			}
 		}

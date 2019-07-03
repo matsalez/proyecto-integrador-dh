@@ -4,6 +4,7 @@
 // De esta manera tengo el scope a la funciones que necesito
   require_once 'register-login-controller.php';
 
+
 	$pageTitle = 'Registro';
 	require_once 'partials/head.php';
 
@@ -42,7 +43,7 @@
 
     $_POST['avatar'] = $imgName;
 
-    $theUser = saveUser();
+    $theUser = saveUser($imgName);
 
     setcookie('userLoged', $theUser['email'], time() + 3000);
 
@@ -58,7 +59,7 @@
 
 
             <div class="formulario-registro">
-                <form class="login"  method="post" enctype="multipart/form-data">
+                <form class="login"  method="post" enctype="multipart/form-data" >
                     <img class="logoform"src="images/logo.png" alt="logo-isabella">
 
                     <br>
